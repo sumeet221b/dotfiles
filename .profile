@@ -8,8 +8,9 @@ shopt -s nocaseglob;
 
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend;
+
 # After each command, append to the history file and reread it
-PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+# PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
