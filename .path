@@ -6,3 +6,9 @@ export PATH=$PATH:$GOPATH/bin
 
 # Ruby
 export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin"
+
+# Conda
+export PATH="/Users/sumeetsteeleye/opt/miniconda3/bin:$PATH"
+
+# Poetry
+export PATH="$PATH:$HOME/.poetry/bin"
