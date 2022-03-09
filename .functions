@@ -24,3 +24,13 @@ function fs() {
 		du $arg .[^.]* ./*;
 	fi;
 }
+
+function setupinfra() {
+	export AWS_PROFILE=nonprod
+	bin/whitelist uat-blue platform
+	bin/whitelist uat-blue bastion
+	cd config
+	ssh -v -N -F uat.cfg uat-blue
+}
+
+	
